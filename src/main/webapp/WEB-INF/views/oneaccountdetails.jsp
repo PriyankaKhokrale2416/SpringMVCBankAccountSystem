@@ -122,27 +122,25 @@ padding: 70px;}
         </tr>
          
          
-        <c:forEach items="${accounts}" var="a" >
                  <tr>
         
-			<td class = "idcol">${a.name}</td>
-			<td class = "idcol">${a.accountNumber}</td>
-           <td class = "idcol">${a.customerId}</td>
-           <td class = "idcol">${a.address}</td>
-           <td class = "idcol">${a.dateOfBirth}</td>
-           <td class = "idcol">${a.phoneNo}</td>
-           <td class = "idcol">${a.adharNo}</td>
-           <td class = "idcol">${a.panNo}</td>
-           <td class = "idcol">${a.email}</td>
+			<td class = "idcol">${accounts.name}</td>
+			<td class = "idcol">${accounts.accountNumber}</td>
+           <td class = "idcol">${accounts.customerId}</td>
+           <td class = "idcol">${accounts.address}</td>
+           <td class = "idcol">${accounts.dateOfBirth}</td>
+           <td class = "idcol">${accounts.phoneNo}</td>
+           <td class = "idcol">${accounts.adharNo}</td>
+           <td class = "idcol">${accounts.panNo}</td>
+           <td class = "idcol">${accounts.email}</td>
  
         	<td class = "idcol">
-        		<a href="${pageContext.request.contextPath}/delete/${a.accountNumber}" onclick="if(!(confirm('Are you sure want to delete this Student permanently?'))) return false"><i class="fas fa-trash text-danger" style="font-size: 30px;"></i></a>
-        		<a href="updatedetails/${a.accountNumber }"><i class="fas fa-pen-nib text-primary" style="font-size: 30px;"></i></a>
+        		<a href="${pageContext.request.contextPath}/delete/${accounts.accountNumber}" onclick="if(!(confirm('Are you sure want to delete this Student permanently?'))) return false"><i class="fas fa-trash text-danger" style="font-size: 30px;"></i></a>
+        		<a href="updatedetails/${accounts.accountNumber }"><i class="fas fa-pen-nib text-primary" style="font-size: 30px;"></i></a>
         	</td>
       
           <tr>
           
-        </c:forEach>
  </table>
 
 

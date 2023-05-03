@@ -62,15 +62,12 @@ public class CustomerDaoImpl implements CustomerDao{
 		
 	}
 
-	public List<Customer> searchCustomer(int accno) {
+	public Customer searchCustomer(int accno) {
 		// TODO Auto-generated method stub
-		return null;
+		return this.hibernatetemplate.get(Customer.class, accno);
+		
 	}
 
-	public CustomerDetails getAllDetails(int accno) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	public void saveCustomerTransactionDetails(CustomerDetails custD) {
 		// TODO Auto-generated method stub

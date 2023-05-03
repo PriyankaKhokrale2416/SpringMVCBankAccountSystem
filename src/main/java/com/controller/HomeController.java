@@ -368,13 +368,13 @@ public class HomeController {
 	
 	
 	
-	@RequestMapping(value = "/BankAccountSystem/customer_search")
+	@RequestMapping(value = "/customer_search")
 	public String showId(@RequestParam("freetext") String accno, Model m)
 	{
 		int id = Integer.parseInt(accno);
-		List<Customer> s = (List<Customer>) this.customerservices.searchCustomer(id);
+		Customer s = this.customerservices.searchCustomer(id);
 		m.addAttribute("accounts", s);
-		return "allAccountdetails";
+		return "oneaccountdetails";
 		
 	}
 	

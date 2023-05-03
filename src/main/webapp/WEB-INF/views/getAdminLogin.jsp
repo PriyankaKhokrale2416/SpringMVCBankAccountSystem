@@ -100,7 +100,7 @@ display: inline;
 
       <div >
 
- <form action ="<c:url value="/BankAccountSystem/customer_search" />">
+ <form action ="<c:url value="/customer_search" />">
     <input type="text"  name="freetext" />
     
   <input type="submit" class="btn btn-primary" value="Search Account" placeholder="Enter Account Number"> 

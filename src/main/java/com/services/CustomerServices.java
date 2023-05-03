@@ -16,7 +16,7 @@ public interface CustomerServices {
 	public void removeCustomerDetailsObj(int accno);
 
 
-	public List<Customer> searchCustomer(int accno);
+	public Customer searchCustomer(int accno);
 	
 	public void saveCustomerTransactionDetails(CustomerDetails custD);
 	

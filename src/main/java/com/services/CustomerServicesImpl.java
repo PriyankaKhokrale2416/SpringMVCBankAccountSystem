@@ -54,9 +54,9 @@ public class CustomerServicesImpl implements CustomerServices{
 		
 	}
 
-	public List<Customer> searchCustomer(int accno) {
+	public Customer searchCustomer(int accno) {
 		// TODO Auto-generated method stub
-		return null;
+		return this.customerdao.searchCustomer(accno);
 	}
 
 	@Transactional
