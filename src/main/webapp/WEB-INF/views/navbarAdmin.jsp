@@ -18,7 +18,6 @@ font-weight: bolder;}
 	
 			<li class="nav-item"><a class="nav-link" href="<c:url value="/" />">Home</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-			<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
        		<li class="nav-item"><a class="nav-link" href="showAllAccounts" />Show all accounts</a></li>
 			
        						
